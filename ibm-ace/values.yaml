@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # license must be set to "accept" in order to accept the terms of the IBM license
-license: "not accepted"
+license: "accept"
 
 # Whether the application is running production workloads
 productionDeployment: false
@@ -22,7 +22,7 @@ productionDeployment: false
 devEdition: true
 
 # Whether to start an image with an MQ Queue Manager.  The Queue Manager will be used by the Integration Server
-queueManagerEnabled: false
+queueManagerEnabled: true
 
 image:
   repository:
@@ -113,7 +113,7 @@ integrationServer:
 
 # log section specifies settings for MQ error logs and Integration Server console logs
 log:
-  format: json
+  format: basic
 
 # metrics section specifies settings for generating queue manager and Integration Server metrics
 metrics:
